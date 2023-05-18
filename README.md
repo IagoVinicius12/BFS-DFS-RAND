@@ -11,7 +11,7 @@
 </div>
 
 # Introdução
-<p>Foi proposto um problema de caminhamento de matrizes quadradas (NxN) de três formas distintas: largura, profundidade e randômica. A primeira forma analisa quais direções são possíveis de ir, explorando, sempre, as posições vizinhas das escolhidas. A segunda opta por uma determinada direção e continua o caminhamento até que o limite daquela movimentação seja atingido. Já a terceira caminha de forma alatória, com possibilidade de retorno. Nesse exercício, todas as três formas de movimentação se dão nas quatro direções cardeais (Norte, Sul, Leste, Oeste).</p> 
+<p>Foi proposto um problema de caminhamento de matrizes quadradas (NxN) de três formas distintas: largura (BFS), profundidade (DFS) e randômica. A primeira forma analisa quais direções são possíveis de ir, explorando, sempre, as posições vizinhas adjacentes das escolhidas. A segunda opta por uma determinada direção e continua o caminhamento até que o limite daquela movimentação seja atingido. Já a terceira caminha de modo alatório, com possibilidade de retorno. Nesse exercício, todas as três formas de movimentação se dão nas quatro direções cardeais (Norte, Sul, Leste, Oeste).</p> 
 
 # Descrição do Problema
 <p>Em um arquivo do tipo ".data", localiza-se uma matriz quadrada, a qual possui, em suas posições, quatro tipos de elementos: inteiro positivo (1), paredes (#), perigos (*) e saída (?). Os inteiros positivos representados por "1" significam pontos de passagens livres da matriz, as paredes significam as posições que não podem ser acessadas, os asteriscos, os perigos a serem enfrentados, e a saída, a posição que se quer atingir.<br>
@@ -23,9 +23,22 @@ Na matriz, os três tipos de caminhamentos realizados devem seguir, além de sua
 - Caso, durante o deslocamento, seja encontrado um perigo (*), todo o processo de caminhamento terá que ser reiniciado, começando, novamente, na posição primária (linha 0 - coluna 0). Após isso, o perigo que se encontrava naquela posição deve ser substituído por um ponto de acesso possível (inteiro positivo "1").
 - Caso, na movimentação, seja encontrado a saída (?), a exploração se encerra.<br>
 
-Todos os elementos da matriz devem ser escaneados e transferidos para o código de programação, que tem como objetivo realizar o caminhamento e salvar todos os dados obtidos. É importante salientar que, terminado um tipo de exploração, os outros devem ser inicados, ou seja, expera-se explorar a matriz de três formas diferentes.
+Todos os elementos da matriz devem ser escaneados e transferidos para o código de programação, que tem como objetivo realizar o caminhamento e salvar todos os dados obtidos. É importante salientar que, terminado um tipo de exploração, os restantes devem ser inicados, ou seja, expera-se explorar a matriz de três formas diferentes.
 
 # Solução Proposta
+<p>Para esse tipo de problema, foi proposto um código que contém 11 arquivos: Largura.hpp, Largura.cpp, Profundidade.hpp, Profundidade.cpp, Randomico.hpp, Randomico.cpp, Fila.hpp, Fila.cpp, Pilha.hpp, Pilha.cpp e Main.cpp.<br>
+  
+- ```Largura.hpp``` : Classe que possui a declaração dos atributos (características) e métodos (funções) do jogador. <br>
+- ```Largura.cpp``` : Arquivo que retém a estruturação das funções envolvidas. <br>
+- ```Profundidade.hpp``` : Classe que possui a declaração de variáveis e funções envolvidas no processo de caminhamento. <br>
+- ```Profundidade.cpp``` : Arquivo que retém a estruturação das funções envolvidas. <br>
+- ```Randomico.hpp``` : Classe que possui a declaração dos atributos (características) e métodos (funções) do jogador. <br>
+- ```Randomico.cpp``` : Arquivo que retém a estruturação das funções envolvidas. <br>
+- ```Fila.hpp``` : Classe que possui a declaração dos atributos (características) e métodos (funções) do jogador. <br>
+- ```Fila.cpp``` : Arquivo que retém a estruturação das funções envolvidas. <br>
+- ```Pilha.hpp``` : Classe que possui a declaração dos atributos (características) e métodos (funções) do jogador. <br>
+- ```Pilha.cpp``` : Arquivo que retém a estruturação das funções envolvidas. <br>
+- ```Main.cpp``` : Arquivo mais importante, responsável por chamar as funções contidas nas classes e realizar o processo de caminhamento.<br>
 
 # Casos Especiais
 
