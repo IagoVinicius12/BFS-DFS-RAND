@@ -28,11 +28,11 @@ Todos os elementos da matriz devem ser escaneados e transferidos para o código 
 # Solução Proposta
 <p>Para esse tipo de problema, foi proposto um código que contém 11 arquivos: Largura.hpp, Largura.cpp, Profundidade.hpp, Profundidade.cpp, Randomico.hpp, Randomico.cpp, Fila.hpp, Fila.cpp, Pilha.hpp, Pilha.cpp e Main.cpp.<br>
   
-- ```Largura.hpp``` : Classe que possui a declaração dos atributos (características) e métodos (funções) do caminhamento BFS. <br>
+- ```Largura.hpp``` : Classe que possui a declaração dos atributos (características) e métodos (funções) envolvidos no caminhamento BFS. <br>
 - ```Largura.cpp``` : Arquivo que retém a estruturação das funções envolvidas. <br><br>
-- ```Profundidade.hpp``` : Classe que possui a declaração das variáveis e funções envolvidas no processo de caminhamento DFS. <br>
+- ```Profundidade.hpp``` : Classe que possui a declaração das variáveis e funções envolvidas no caminhamento DFS. <br>
 - ```Profundidade.cpp``` : Arquivo que retém a estruturação das funções envolvidas. <br><br>
-- ```Randomico.hpp``` : Classe que possui a declaração dos atributos e métodos do caminhamento do tipo aleatório (RAND). <br>
+- ```Randomico.hpp``` : Classe que possui a declaração dos atributos e métodos  envolvidos no caminhamento aleatório (RAND). <br>
 - ```Randomico.cpp``` : Arquivo que retém a estruturação das funções envolvidas. <br><br>
 - ```Fila.hpp``` : Arquivo que possui a declaração das variáveis e funções da estrutura auxiliar. <br>
 - ```Fila.cpp``` : Arquivo que retém a estruturação das funções envolvidas. <br><br>
