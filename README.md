@@ -45,7 +45,7 @@ Outro ponto importante é a forma que o carregamento da matriz foi realizado. Te
 Dito esses assuntos, vale ressaltar as três funções comuns declaradas nos arquivos Largura.cpp, Profundidade.cpp e Randomico.cpp, as quais contribuem para o caminhamento:
   
 - ```Leitura``` : Função que possui como objetivo ler o arquivo do tipo ".data" e carregá-lo em uma matriz.
-- ```CriaTrajetoria``` : Função que cria o caminho percorrido, o qual se origina através do uso de um marcador (x), sendo que, todas as posições nas quais o marcador está presente são as posições acessadas no processo.
+- ```CriaTrajetoria``` : Função utilizada no final do processo, a qual cria o caminho percorrido, que se origina através do uso de um marcador (x), sendo que, todas as posições nas quais o marcador está presente são as posições acessadas no processo.
 - ```VerTrajetoria``` : Função responsável por mostrar o caminho percorrido após o processo de movimentação.
 
 # Casos Especiais
