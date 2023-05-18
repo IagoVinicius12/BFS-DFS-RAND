@@ -73,6 +73,13 @@ Dito esses assuntos, vale ressaltar as funções declaradas nos arquivos Largura
   
 Com a interconexão de todas essas classes e funções, os três tipos de caminhamentos da matriz se tornam possíveis e reais.
 
+<div align=center>
+<img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/bc71a08d-112c-43bb-a4e3-d73fc70054d9.png" width="850px">
+</div>
+<p  align="center">
+Representação dos três tipos de caminhamento em uma matriz quadra (3x3). Os números ordenam os movimentos a serem seguidos em cada um dos casos. É importante salientar que, no caminhamento aleatório, qualquer número poderia assumir a identidade de qualquer número, tendo em vista que a aleatoriedade não possui um padrão de deslocamento.
+</p>
+
 # Casos Especiais
 
 # Casos Sem Tratamento
