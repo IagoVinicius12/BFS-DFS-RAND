@@ -11,4 +11,4 @@
 </div>
 
 # Introdução
-
+<p>Foi proposto um problema de caminhamento de matrizes quadradas (NxN) de três formas distintas, sendo a primeira em largura, a segunda em profundidade, e a terceira de forma randômica. O primeiro tipo analisa quais direções são possíveis de ir, o segundo escolhe uma direção e vai até o limite daquela escolha, e o terceiro se movimenta de forma alatória com possibilidade de retorno. No exercício, a movimentação se dá nas quatro direções cardeais (Norte, Sul, Leste, Oeste).</p> 
