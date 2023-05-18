@@ -11,7 +11,7 @@
 </div>
 
 # Introdução
-<p>Foi proposto um problema de caminhamento de matrizes quadradas (NxN) de três formas distintas: largura (BFS), profundidade (DFS) e randômica. A primeira forma analisa quais direções são possíveis de ir, explorando, sempre, as posições vizinhas adjacentes das escolhidas. A segunda opta por uma determinada direção e continua o caminhamento até que o limite daquela movimentação seja atingido. Já a terceira caminha de modo alatório, com possibilidade de retorno. Nesse exercício, todas as três formas de movimentação se dão nas quatro direções cardeais (Norte, Sul, Leste, Oeste).</p> 
+<p>Foi proposto um problema de caminhamento de matrizes quadradas (NxN) de três formas distintas: largura (BFS), profundidade (DFS) e randômica (RAND). A primeira forma analisa quais direções são possíveis de ir, explorando, sempre, as posições vizinhas adjacentes das escolhidas. A segunda opta por uma determinada direção e continua o caminhamento até que o limite daquela movimentação seja atingido. Já a terceira caminha de modo alatório, com possibilidade de retorno. Nesse exercício, todas as três formas de movimentação se dão nas quatro direções cardeais (Norte, Sul, Leste, Oeste).</p> 
 
 # Descrição do Problema
 <p>Em um arquivo do tipo ".data", localiza-se uma matriz quadrada, a qual possui, em suas posições, quatro tipos de elementos: inteiro positivo (1), paredes (#), perigos (*) e saída (?). Os inteiros positivos representados por "1" significam pontos de passagens livres da matriz, as paredes significam as posições que não podem ser acessadas, os asteriscos, os perigos a serem enfrentados, e a saída, a posição que se quer atingir.<br>
@@ -28,16 +28,16 @@ Todos os elementos da matriz devem ser escaneados e transferidos para o código 
 # Solução Proposta
 <p>Para esse tipo de problema, foi proposto um código que contém 11 arquivos: Largura.hpp, Largura.cpp, Profundidade.hpp, Profundidade.cpp, Randomico.hpp, Randomico.cpp, Fila.hpp, Fila.cpp, Pilha.hpp, Pilha.cpp e Main.cpp.<br>
   
-- ```Largura.hpp``` : Classe que possui a declaração dos atributos (características) e métodos (funções) do jogador. <br>
-- ```Largura.cpp``` : Arquivo que retém a estruturação das funções envolvidas. <br>
-- ```Profundidade.hpp``` : Classe que possui a declaração de variáveis e funções envolvidas no processo de caminhamento. <br>
-- ```Profundidade.cpp``` : Arquivo que retém a estruturação das funções envolvidas. <br>
-- ```Randomico.hpp``` : Classe que possui a declaração dos atributos (características) e métodos (funções) do jogador. <br>
-- ```Randomico.cpp``` : Arquivo que retém a estruturação das funções envolvidas. <br>
-- ```Fila.hpp``` : Classe que possui a declaração dos atributos (características) e métodos (funções) do jogador. <br>
-- ```Fila.cpp``` : Arquivo que retém a estruturação das funções envolvidas. <br>
-- ```Pilha.hpp``` : Classe que possui a declaração dos atributos (características) e métodos (funções) do jogador. <br>
-- ```Pilha.cpp``` : Arquivo que retém a estruturação das funções envolvidas. <br>
+- ```Largura.hpp``` : Classe que possui a declaração dos atributos (características) e métodos (funções) do caminhamento BFS. <br>
+- ```Largura.cpp``` : Arquivo que retém a estruturação das funções envolvidas. <br><br>
+- ```Profundidade.hpp``` : Classe que possui a declaração das variáveis e funções envolvidas no processo de caminhamento DFS. <br>
+- ```Profundidade.cpp``` : Arquivo que retém a estruturação das funções envolvidas. <br><br>
+- ```Randomico.hpp``` : Classe que possui a declaração dos atributos e métodos do caminhamento do tipo aleatório (RAND). <br>
+- ```Randomico.cpp``` : Arquivo que retém a estruturação das funções envolvidas. <br><br>
+- ```Fila.hpp``` : Arquivo que possui a declaração das variáveis e funções da estrutura auxiliar. <br>
+- ```Fila.cpp``` : Arquivo que retém a estruturação das funções envolvidas. <br><br>
+- ```Pilha.hpp``` : Arquivo que possui a declaração dos atributos e métodos da estrutura auxiliar. <br>
+- ```Pilha.cpp``` : Arquivo que retém a estruturação das funções envolvidas. <br><br>
 - ```Main.cpp``` : Arquivo mais importante, responsável por chamar as funções contidas nas classes e realizar o processo de caminhamento.<br>
 
 # Casos Especiais
