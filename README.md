@@ -42,11 +42,36 @@ Todos os elementos da matriz devem ser escaneados e transferidos para o código 
   
 Em primeiro lugar, destaca-se a utilização das estruturas "Fila" e "Pilha" para auxílio no processo de movimentação. Para o caminhamento em largura (BFS), a "Fila" foi utilizada, já que, para garantir a correta ordem de chegada dos vértices, as posições visitadas posteriormente deveriam ser armazenadas após as primeiras, tal qual, literalmente, uma fila, onde o primeiro elemento adicionado também é o primeiro elemento eliminado. Já para o caminhamento em profundidade (DFS) e para o caminhamento randômico (RAND), a "Pilha" foi utilizada, tendo em vista que, para ambas as movimentações, a próxima busca sempre começa no próxima posição, assim como, literalmente, uma pilha, onde o primeiro elemento adicionado também é o último elemento eliminado. <br>
 Outro ponto importante é a forma que o carregamento da matriz foi realizado. Tendo em vista que o processo aconteceria três vezes, carregar três matrizes em memória seria uma alternativa de demandaria um grande custo, ou seja, negativo para o processamento. Para contornar essa situação, utilizou-se programação orientada à objeto, ou seja, a mesma matriz é utilizada três vezes. Com isso, obtém-se um baixo custo de memória e uma otimização do programa.    
-Dito esses assuntos, vale ressaltar as três funções comuns declaradas nos arquivos Largura.cpp, Profundidade.cpp e Randomico.cpp, as quais contribuem para o caminhamento:
+Dito esses assuntos, vale ressaltar as funções declaradas nos arquivos Largura.cpp, Profundidade.cpp e Randomico.cpp, as quais contribuem para o caminhamento:
+
+<storng><h4>Largura.cpp (BFS):</h4></strong>
   
 - ```Leitura``` : Função que possui como objetivo ler o arquivo do tipo ".data" e carregá-lo em uma matriz.
+- ```Andando``` :  Função responsável por buscar, nas quatro direções cardeais, a saída (?) da matriz. Essa função também determina se existe algum empecilho na busca (parede - # ou perigo - *). Caso exista, as atitudes em acordo com as regras do programa serão tomadas, tais como não fazer nada ou reiniciar o caminhamento. Tal processo se perpetua até que a saída (?) da matriz seja encontrada.
+- ```Movimento``` : Função usada no final do processo de busca, ou seja, quando a saída for encontrada, o caminhamento será iniciado, seguindo as coorrdenadas analizadas e armazenadas na "Fila".
 - ```CriaTrajetoria``` : Função utilizada no final do processo, a qual cria o caminho percorrido, que se origina através do uso de um marcador (x), sendo que, todas as posições nas quais o marcador está presente são as posições acessadas no processo.
-- ```VerTrajetoria``` : Função responsável por mostrar o caminho percorrido após o processo de movimentação.
+- ```VerMatriz``` : Função responsável por mostrar o caminho percorrido após o processo de movimentação.
+  
+<storng><h4>Profundidade.cpp (DFS):</h4></strong>
+  
+- ```LendoMatriz``` : Função que possui como objetivo ler o arquivo do tipo ".data" e carregá-lo em uma matriz.
+- ```Andando``` :  Função responsável por escolher uma determinada direção e continuar o caminhamento naquela direção até que o limite seja atingido. Essa função também determina se existe algum empecilho no caminho escolhido (parede - # ou perigo - *). Caso exista, as atitudes em acordo com as regras do programa serão tomadas, tais como não fazer nada ou reiniciar o caminhamento. Vale salientar que as possições possíveis são armazenadas na "Pilha". Tal processo se perpetua até que a saída (?) da matriz seja encontrada.
+- ```CriaTrajetoria``` : Função utilizada no final do processo, a qual cria o caminho percorrido, que se origina através do uso de um marcador (x), sendo que, todas as posições nas quais o marcador está presente são as posições acessadas no processo.
+- ```VerMatriz``` : Função responsável por mostrar o caminho percorrido após o processo de movimentação.
+  
+<storng><h4>Randômico.cpp (RAND):</h4></strong>
+  
+- ```Leitura``` : Função que possui como objetivo ler o arquivo do tipo ".data" e carregá-lo em uma matriz.
+- ```Movimento``` :  Função responsável por escolher, aleatoriamente, uma determinada direção para o caminhamento, sendo que tal processo se perpetua até que a saída (?) da matriz seja encontrada. Por fim, vale exibir a relação entre o sorteio randômico e as 4 direções cardeais:
+  * 0 - Leste
+  * 1 - Sul
+  * 2 - Oeste
+  * 3 - Norte
+- ```AndarMatriz``` : Função responsável por realizar o caminhamento, analisando se a posição da matriz é acessável ou não. Caso exista algum empecilho no caminho escolhido (parede - # ou perigo - *), as atitudes em acordo com as regras do programa serão tomadas, tais como não fazer nada ou reiniciar o caminhamento. Vale ressaltar que as posições possíveis são armazenadas na "Pilha".
+- ```CriaTrajetoria``` : Função utilizada no final do processo, a qual cria o caminho percorrido, que se origina através do uso de um marcador (x), sendo que, todas as posições nas quais o marcador está presente são as posições acessadas no processo.
+- ```VerMatriz``` : Função responsável por mostrar o caminho percorrido após o processo de movimentação.
+  
+Com a interconexão de todas essas classes e funções, os três tipos de caminhamento da matriz se tornam possíveis e reais.
 
 # Casos Especiais
 
