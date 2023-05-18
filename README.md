@@ -7,7 +7,7 @@
 <img align="center" height="20px" width="90px" src="https://img.shields.io/badge/Compilation-Make-orange.svg"/>
 </div>
 <br><div align=center>
-<img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/2271e7af-6bdd-4e7d-ac3c-2a8d3768ad8a.png" width="850px">
+<img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/923ba054-3c9b-4b27-bb43-646b474568e1.png" width="850px">
 </div>
 
 # Introdução
@@ -74,7 +74,7 @@ Dito esses assuntos, vale ressaltar as funções declaradas nos arquivos Largura
 Com a interconexão de todas essas classes e funções, os três tipos de caminhamentos da matriz se tornam possíveis e reais.
 
 <div align=center>
-<img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/bc71a08d-112c-43bb-a4e3-d73fc70054d9.png" width="850px">
+<img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/834960e6-6e86-4876-8caf-f08a7f6a38cd.png" width="850px">
 </div>
 <p  align="center">
 Representação dos três tipos de caminhamento em uma matriz quadra (3x3). Os números representam os movimentos ordenados a serem seguidos em cada um dos casos. É importante salientar que, no caminhamento aleatório (RAND), qualquer número poderia assumir a identidade de qualquer número, tendo em vista que a aleatoriedade não possui um padrão de deslocamento.
