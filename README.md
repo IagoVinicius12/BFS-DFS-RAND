@@ -58,4 +58,20 @@ Dito esses assuntos, vale ressaltar as três funções comuns declaradas nos arq
 
 # Especificações do Dispositivo Utilizado
 
+| Componentes            | Detalhes                                                                                         |
+| -----------------------| -----------------------------------------------------------------------------------------------  |
+|  `Processador`         | Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz   1.50 GHz                                             |
+|  `RAM Instalada`       | 8.0 GB (Utilizável: 7.8 GB)                                                                      |
+|  `Tipo de Sistema`     | Sistema Operacional de 64 bits, processador baseado em x64                                       |
+|  `Sistema Operacional` | Edição Windows 11 Home Single Language, versão 22H2                                              |
+
 # Compilação e Execução
+  
+Um arquivo Makefile que realiza todo o procedimento de compilação e execução está disponível no código. Para utilizá-lo, siga as diretrizes de execução no terminal:
+
+
+| Comando                |  Função                                                                                           |                     
+| -----------------------| ------------------------------------------------------------------------------------------------- |
+|  `make clean`          | Apaga a última compilação realizada contida na pasta build                                        |
+|  `make`                | Executa a compilação do programa utilizando o g++, e o resultado vai para a pasta build           |
+|  `make run`            | Executa o programa da pasta build após a realização da compilação                                 |
