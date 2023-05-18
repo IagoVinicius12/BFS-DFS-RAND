@@ -71,7 +71,7 @@ Dito esses assuntos, vale ressaltar as funções declaradas nos arquivos Largura
 - ```CriaTrajetoria``` : Função utilizada no final do processo, a qual cria o caminho percorrido, que se origina através do uso de um marcador (x), sendo que, todas as posições nas quais o marcador está presente são as posições acessadas no processo.
 - ```VerMatriz``` : Função responsável por mostrar o caminho percorrido após o processo de movimentação.
   
-Com a interconexão de todas essas classes e funções, os três tipos de caminhamento da matriz se tornam possíveis e reais.
+Com a interconexão de todas essas classes e funções, os três tipos de caminhamentos da matriz se tornam possíveis e reais.
 
 # Casos Especiais
 
