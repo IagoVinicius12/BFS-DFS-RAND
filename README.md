@@ -47,7 +47,7 @@ Dito esses assuntos, vale ressaltar as funções declaradas nos arquivos Largura
 <storng><h4>Largura.cpp (BFS):</h4></strong>
   
 - ```Leitura``` : Função que possui como objetivo ler o arquivo do tipo ".data" e carregá-lo em uma matriz.
-- ```Andando``` :  Função responsável por buscar, nas quatro direções cardeais, a saída (?) da matriz. Essa função também determina se existe algum empecilho na busca (parede - # ou perigo - *). Caso exista, as atitudes em acordo com as regras do programa serão tomadas, tais como não fazer nada ou reiniciar o caminhamento. Tal processo se perpetua até que a saída (?) da matriz seja encontrada.
+- ```Andando``` :  Função responsável por buscar, nas quatro direções cardeais, a saída (?) da matriz. Essa função também determina se existe algum empecilho na busca (parede - # ou perigo - *). Caso exista, as atitudes em acordo com as regras do programa serão tomadas, tais como não fazer nada ou reiniciar o caminhamento. Vale Tal processo se perpetua até que a saída (?) da matriz seja encontrada.
 - ```Movimento``` : Função usada no final do processo de busca, ou seja, quando a saída for encontrada, o caminhamento será iniciado, seguindo as coorrdenadas analizadas e armazenadas na "Fila".
 - ```CriaTrajetoria``` : Função utilizada no final do processo, a qual cria o caminho percorrido, que se origina através do uso de um marcador (x), sendo que, todas as posições nas quais o marcador está presente são as posições acessadas no processo.
 - ```VerMatriz``` : Função responsável por mostrar o caminho percorrido após o processo de movimentação.
