@@ -81,6 +81,9 @@ Representação dos três tipos de caminhamento em uma matriz quadra (3x3). Os n
 </p>
 
 # Casos Especiais
+<br>Primeiramente, os casos especiais foram tratados pela forma que o nosso algoritmo se comporta, com excessão do randômico os dois foram tratados de formas bem fáceis para resolver qualquer tipo de problema simples, visando leva-lo sempre rapidamente ao seu objetivo sem deixar de lado o objetivo deste trabalho.</br>
+<br>O DFS foi tratado de forma que sempre que ele achasse um "beco sem saída" ele marcaria a posição que ele estava como preto e começaria a voltar até que achasse algum lugar que ele pudesse continuar sua trajetória, o beco não precisa necessariamente ser um lugar cheio de paredes, ele pode ser um caminho em que ele foi fechando e não achou nada lá, a partir disso ele começaria a voltar cada uma das posições da pilha até que conseguisse chegar em uma posição que ele tivesse opções de onde ir.</br>
+<br>O BFS foi tratado de outra forma, já que não existiriam "becos sem saída" para ele, o fato de não existirem becos sem saída é causado pela propria naturalidade da exploração do algoritmo, se ele não achar nenhum lugar para explorar a partir daquele, ele simplesmente não vai voltar lá perto pois não haverá nenhum lugar perto daquele que esteja na fila, o que o torna muito bom para qualquer situação, mas durante sua produção vimos que a exploração que ele fazia em duas direções não seria eficiênte o bastante, então foi necessário acrescentar mais duas direções, para que ele não ficasse incompleto em sua exploração, adicionando essas duas direções observamos que se houver uma parede gigantesca no meio da  </br>
 
 # Casos Sem Tratamento
 
