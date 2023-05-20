@@ -71,19 +71,27 @@ Dito esses assuntos, vale ressaltar as funções declaradas nos arquivos Largura
 - ```CriaTrajetoria``` : Função utilizada no final do processo, a qual cria o caminho percorrido, que se origina através do uso de um marcador (x), sendo que, todas as posições nas quais o marcador está presente são as posições acessadas no processo.
 - ```VerMatriz``` : Função responsável por mostrar o caminho percorrido após o processo de movimentação.
   
-Com a interconexão de todas essas classes e funções, os três tipos de caminhamentos da matriz se tornam possíveis e reais.
-
+Com a interconexão de todas essas classes e funções, os três tipos de caminhamentos da matriz se tornam possíveis e reais.<br><br>
+  
+<div align=center>
+<img src="https://github.com/Guiliard/Labirinto-Recorrente/assets/127882640/10a4d84a-de7a-4a17-8d69-33b0b15ce691.png" hspace="50px" width="420px"/>
+<img src="https://github.com/Guiliard/Labirinto-Recorrente/assets/127882640/3b326664-be7d-472a-b331-2ce0c809fc0c.png" width="420px"/>
+</div>
+<p  align="center">
+Estruturas auxiliares utilizadas nos processos de caminhamento.
+</p>
+<br>
 <div align=center>
 <img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/834960e6-6e86-4876-8caf-f08a7f6a38cd.png" width="850px">
 </div>
 <p  align="center">
-Representação dos três tipos de caminhamento em uma matriz quadra (3x3). Os números representam os movimentos ordenados a serem seguidos em cada um dos casos. É importante salientar que, no caminhamento aleatório (RAND), qualquer número poderia assumir a identidade de qualquer número, tendo em vista que a aleatoriedade não possui um padrão de deslocamento.
+Ilustração dos três tipos de caminhamento em uma matriz quadra (3x3). Os números representam os movimentos ordenados a serem seguidos em cada um dos casos. É importante salientar que, no caminhamento aleatório (RAND), qualquer número poderia assumir a identidade de qualquer número, tendo em vista que a aleatoriedade não possui um padrão de deslocamento.
 </p>
 
 # Casos Especiais
-<br>Primeiramente, os casos especiais foram tratados pela forma que o nosso algoritmo se comporta, com excessão do randômico os dois foram tratados de formas bem fáceis para resolver qualquer tipo de problema simples, visando leva-lo sempre rapidamente ao seu objetivo sem deixar de lado o objetivo deste trabalho.</br>
-<br>O DFS foi tratado de forma que sempre que ele achasse um "beco sem saída" ele marcaria a posição que ele estava como preto e começaria a voltar até que achasse algum lugar que ele pudesse continuar sua trajetória, o beco não precisa necessariamente ser um lugar cheio de paredes, ele pode ser um caminho em que ele foi fechando e não achou nada lá, a partir disso ele começaria a voltar cada uma das posições da pilha até que conseguisse chegar em uma posição que ele tivesse opções de onde ir.</br>
-<br>O BFS foi tratado de outra forma, já que não existiriam "becos sem saída" para ele, o fato de não existirem becos sem saída é causado pela propria naturalidade da exploração do algoritmo, se ele não achar nenhum lugar para explorar a partir daquele, ele simplesmente não vai voltar lá perto pois não haverá nenhum lugar perto daquele que esteja na fila, o que o torna muito bom para qualquer situação, mas durante sua produção vimos que a exploração que ele fazia em duas direções não seria eficiênte o bastante, então foi necessário acrescentar mais duas direções, para que ele não ficasse incompleto em sua exploração, adicionando essas duas direções observamos que se houver uma parede gigantesca no meio da matriz, mas um pequeno espaço no final dela apenas para passar, ele terá um comportamento espelhado, ele fara a mesma coisa que ele fez chegando naquele lugar só que invertendo uma das direções, se ele chegou lá descendo ele acabará subindo, caso ele não ache o fim. O tratamento das duas direções foi de extrema importância para que enxergassemos este comportamento, além de que casos que poderiam acabar em erro no código que possui só duas direções são simplesmente um caminho para o algoritmo. </br>
+<p>Em primeiro lugar, vale ressaltar que os casos especiais foram tratados de acordo com o comportamento do algoritmo. Com excessão do randômico (RAND), tanto o  caminhamento em largura (BFS) quanto o caminhamento em profundidade (DFS) foram tratados de forma a se atingir um performace otimizada, visando encontrar, de maneira rápida, a saída da matriz.</p>
+<p>Em relação ao DFS (profundidade), sempre que o código achasse um "beco sem saída", ele determinaria a posição em que o marcador estivesse como preto e começaria a voltar até que encontrasse uma posição que o programa pudesse continuar sua trajetória. É importante dizer que o "beco sem saída" não precisa ser, necessariamente, um lugar cheio de paredes, tendo em vista que ele pode ser um caminho em que o próprio algoritmo foi fechando e não encontrou o objetivo (saída - ?). A partir disso, o marcador começaria a voltar cada uma das posições, as quais foram armazenadas na Pilha, até que conseguisse chegar em um local que ele tivesse opções de movimento.</p>
+<p>Já o BFS (largura), foi tratado de outra forma, tendo em vista que, nesse caso, não existiriam "becos sem saída", pois a própria naturalidade da exploração do algoritmo elimina essa possibilidade. Seu tipo de tratamento está relacionado à forma que sua procura se dá, já que, ao invés de explorar apenas duas direções, como é o natural desse tipo de código, acrescentou-se mais duas direções, para que seu caminhamento ficasse mais completo e eficiente. Tal fato foi vantajoso porque caso houver, na matriz, uma grande parede e apenas um pequeno espaço possível de se passar, o programa terá um comportamento espelhado, ou seja, ele fará o mesmo processo que ele fez para chegar naquele local só que invertendo uma das direções, isto é, se ele desceu e não encontrou a saída, ele subirá em busca dela.</p>
 
 # Casos Sem Tratamento
 
