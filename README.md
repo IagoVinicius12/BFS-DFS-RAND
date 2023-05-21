@@ -94,7 +94,8 @@ Ilustração dos três tipos de caminhamento em uma matriz quadra (3x3). Os núm
 <p>Já o BFS (largura), foi tratado de outra forma, tendo em vista que, nesse caso, não existiriam "becos sem saída", pois a própria naturalidade da exploração do algoritmo elimina essa possibilidade. Seu tipo de tratamento está relacionado à forma que sua procura se dá, já que, ao invés de explorar apenas duas direções, como é o natural desse tipo de código, acrescentou-se mais duas direções, para que seu caminhamento ficasse mais completo e eficiente. Tal fato foi vantajoso porque caso houver, na matriz, uma grande parede e apenas um pequeno espaço possível de se passar, o programa terá um comportamento espelhado, ou seja, ele fará o mesmo processo que ele fez para chegar naquele local só que invertendo uma das direções, isto é, se ele desceu e não encontrou a saída, ele subirá em busca dela.</p>
 
 # Casos Sem Tratamento
-
+<p>Os casos sem tratamento são os mesmos para todos os algoritmos, todos eles não podem finalizar a busca caso o seu objetivo esteja cercado cor paredes, resultando em um looping eterno, já que ele está procurando a saída por toda a matriz de novo e de novo.</p>
+<p>Uma forma de consertar o código seria adicionar algumas condicionais antes mesmo de iniciar a busca, verificar por pelo menos se há uma passagem para a saída, porém para o nosso objetivo não foi necessário essa implementação,outra forma de talvez consertar estes possíveis erros seria adicionar as diagonais ao movimento de todos os algoritmos, já que existem alguns casos que talvez seja possível somente andando na diagonal.</p>
 # Implementação
 
 # Conclusão
