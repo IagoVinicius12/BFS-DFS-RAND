@@ -96,10 +96,12 @@ Ilustração dos três tipos de caminhamento em uma matriz quadra (3x3). Os núm
 # Casos Sem Tratamento
 <p>Os casos sem tratamento são os mesmos para todos os algoritmos, todos eles não podem finalizar a busca caso o seu objetivo esteja cercado cor paredes, resultando em um looping eterno, já que ele está procurando a saída por toda a matriz de novo e de novo.</p>
 <p>Uma forma de consertar o código seria adicionar algumas condicionais antes mesmo de iniciar a busca, verificar por pelo menos se há uma passagem para a saída, porém para o nosso objetivo não foi necessário essa implementação,outra forma de talvez consertar estes possíveis erros seria adicionar as diagonais ao movimento de todos os algoritmos, já que existem alguns casos que talvez seja possível somente andando na diagonal.</p>
+
 # Implementação
 
 # Conclusão
-<p>Por fim, neste trabalho foi observado as diferentes formas de exploração de matriz, cada um possui uma particularidade, casos bons e ruins, mas são importantes para o entendimento de algoritmos e suas funções. O BFS e o DFS possuem uma mesma função que é explorar a matriz até achar seu objetivo ou até passar por todas as posições da matriz, tendo dois algoritmos de mesmo objetivo é possível compara-los para observar quais são seus melhores e piores casos, de acordo com as mudanças na matriz</p>
+<p>Por fim, neste trabalho foi observado as diferentes formas de exploração de matriz, cada um possui uma particularidade, casos bons e ruins, mas são importantes para o entendimento de algoritmos e suas funções. O BFS e o DFS possuem uma mesma função que é explorar a matriz até achar seu objetivo ou até passar por todas as posições da matriz, tendo dois algoritmos de mesmo objetivo é possível compara-los para observar quais são seus melhores e piores casos, de acordo com as mudanças na matriz.</p>
+
 # Especificações do Dispositivo Utilizado
 
 | Componentes            | Detalhes                                                                                         |
@@ -108,9 +110,11 @@ Ilustração dos três tipos de caminhamento em uma matriz quadra (3x3). Os núm
 |  `RAM Instalada`       | 8.0 GB (Utilizável: 7.8 GB)                                                                      |
 |  `Tipo de Sistema`     | Sistema Operacional de 64 bits, processador baseado em x64                                       |
 |  `Sistema Operacional` | Edição Windows 11 Home Single Language, versão 22H2                                              |
+
+
 | Componentes 2          | Detalhes                                                                                         |
 | -----------------------| -----------------------------------------------------------------------------------------------  |
-|  `Processador`         | Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz   1.50 GHz                                             |
+|  `Processador`         | AMD Ryzen 5 4600H with Radeon Graphics            3.00 GHz                                       |
 |  `RAM Instalada`       | 16.0 GB (Utilizável: 15.4 GB)                                                                    |
 |  `Tipo de Sistema`     | Sistema Operacional de 64 bits, processador baseado em x64                                       |
 |  `Sistema Operacional` | Edição Windows 11 Home Single Language, versão 22H2                                              |
