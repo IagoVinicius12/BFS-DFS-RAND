@@ -117,9 +117,33 @@ Ilustração dos três casos sem tratamento em uma matriz quadrada (3x3). Ambos 
 
 # Implementação
 
+Considere a matriz (50x50) como teste do problema proposto:
+<div align=center>
+<img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/1183b3da-b386-4053-86ae-2f0ce07646a8.png" width="1000px">
+</div>
+O resultado esperado é:<br>
+<br><div align=center>
+<img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/ffe8da41-ecd8-48a4-8d37-30078739fe24.png" width="1000px">
+<p  align="center">
+Largura e trajetória correspondente.<br> <br>
+</p>
+<img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/a55445f7-f6e1-45a4-8569-35213bf0018f.png" width="1000px">
+<p  align="center">
+Profundidade e trajetória correspondente. <br> <br>
+</p>
+<img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/5fee0724-6551-4257-851a-d35b3b4eff54.png" width="1000px"> <br>
+<p  align="center">
+Randômico e trajetória correspondente. <br> <br>
+</p>
+<img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/a7a7a4d1-96fb-438a-aeed-5e4ac7c6a16b.png" width="250px"> <br>
+<p  align="center">
+Tempo de execução de cada caminhamento e total. <br> <br>
+</p>
+</div>
+
 # Conclusão
 <p>De forma geral, o programa, orientado à objeto, se mostra eficiente para resolver o caminhamento de matrizes. Seu custo computacional é diretamente proporcional ao tamanho da entrada, visto que um grande número de matrizes maiores demandará mais iterações e operações do que um pequeno número de matrizes menores. Além disso, afirma-se que o objetivo do trabalho foi cumprido com exelência, porém, o código é passivo de melhorias e otimizações, tais como aquelas discutidas na seção "Casos Sem Tratamento".<p>
-<p>Por fim, neste trabalho foi observado as diferentes formas de exploração de matriz, cada uma possuindo uma determinada particularidade. Diferentemente do RAND, o BFS e o DFS possuem a mesma função, a qual é a de explorar a matriz até achar seu objetivo ou até passar por todas as posições da matriz. Tendo dois algoritmos de mesmo objetivo, é possível compará-los para observar quais são seus melhores e piores casos, de acordo com as mudanças na matriz. Vale ressaltar que a média do tempo de execução do código inteiro foi de 18,88 milisegundos.</p>
+<p>Por fim, neste trabalho foi observado as diferentes formas de exploração de matriz, cada uma possuindo sua determinada particularidade. Com mudanças na matriz, é possível comparar os algoritmos para observar quais são seus melhores e piores casos. Em se tratando sobre o BFS E RAND, ambos "melhoram" o seu desempenho quanto mais próximo a saída (?) estiver da posição de início (linha 0 - coluna 0). Já o DFS apresenta um desempenho mais positivo quanto mais afastado a saída estiver da posição inicial. Vale ressaltar que a média do tempo de execução do código inteiro também depende do tamanho da matriz e da localização da saída. No exemplo apresentado, a média foi de 500 milissegundos.</p>
 
 # Especificações dos Dispositivos Utilizados
 
