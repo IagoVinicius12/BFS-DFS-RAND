@@ -119,19 +119,19 @@ Ilustração dos três casos sem tratamento em uma matriz quadrada (3x3). Ambos 
 
 Considere a matriz (50x50) como teste do problema proposto:
 <div align=center>
-<img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/1183b3da-b386-4053-86ae-2f0ce07646a8.png" width="1000px">
+<img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/1183b3da-b386-4053-86ae-2f0ce07646a8.png" width="800px">
 </div>
 O resultado esperado é:<br>
 <br><div align=center>
-<img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/ffe8da41-ecd8-48a4-8d37-30078739fe24.png" width="1000px">
+<img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/ffe8da41-ecd8-48a4-8d37-30078739fe24.png" width="800px">
 <p  align="center">
 Largura e trajetória correspondente.<br> <br>
 </p>
-<img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/a55445f7-f6e1-45a4-8569-35213bf0018f.png" width="1000px">
+<img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/a55445f7-f6e1-45a4-8569-35213bf0018f.png" width="800px">
 <p  align="center">
 Profundidade e trajetória correspondente. <br> <br>
 </p>
-<img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/5fee0724-6551-4257-851a-d35b3b4eff54.png" width="1000px"> <br>
+<img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/5fee0724-6551-4257-851a-d35b3b4eff54.png" width="800px"> <br>
 <p  align="center">
 Randômico e trajetória correspondente. <br> <br>
 </p>
