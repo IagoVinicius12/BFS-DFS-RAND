@@ -41,7 +41,16 @@ Todos os elementos da matriz devem ser escaneados e transferidos para o código 
 - ```Main.cpp``` : Arquivo mais importante, responsável por chamar as funções contidas nas classes e realizar o processo de caminhamento.<br>
   
 Em primeiro lugar, destaca-se a utilização das estruturas "Fila" e "Pilha" para auxílio no processo de movimentação. Para o caminhamento em largura (BFS), a "Fila" foi utilizada, já que, para garantir a correta ordem de chegada dos vértices, as posições visitadas posteriormente deveriam ser armazenadas após as primeiras, tal qual, literalmente, uma fila, onde o primeiro elemento adicionado também é o primeiro elemento eliminado. Já para o caminhamento em profundidade (DFS) e para o caminhamento randômico (RAND), a "Pilha" foi utilizada, tendo em vista que, para ambas as movimentações, a próxima busca sempre começa no próxima posição, assim como, literalmente, uma pilha, onde o primeiro elemento adicionado também é o último elemento eliminado. <br>
-Outro ponto importante é a forma que o carregamento da matriz foi realizado. Tendo em vista que o processo aconteceria três vezes, carregar três matrizes em memória seria uma alternativa de demandaria um grande custo, ou seja, negativo para o processamento. Para contornar essa situação, utilizou-se programação orientada à objeto, ou seja, a mesma matriz é utilizada três vezes. Com isso, obtém-se um baixo custo de memória e uma otimização do programa.    
+Outro ponto importante é a forma que o carregamento da matriz foi realizado. Tendo em vista que o processo aconteceria três vezes, carregar três matrizes em memória seria uma alternativa de demandaria um grande custo, ou seja, negativo para o processamento. Para contornar essa situação, utilizou-se programação orientada à objeto, ou seja, a mesma matriz é utilizada três vezes. Com isso, obtém-se um baixo custo de memória e uma otimização do programa.   
+<br>
+<div align=center>
+<img src="https://github.com/Guiliard/Labirinto-Recorrente/assets/127882640/10a4d84a-de7a-4a17-8d69-33b0b15ce691.png" hspace="50px" width="420px"/>
+<img src="https://github.com/Guiliard/Labirinto-Recorrente/assets/127882640/3b326664-be7d-472a-b331-2ce0c809fc0c.png" width="420px"/>
+</div>
+<p  align="center">
+Estruturas auxiliares utilizadas nos processos de caminhamento.
+</p>
+<br>
 Dito esses assuntos, vale ressaltar as funções declaradas nos arquivos Largura.cpp, Profundidade.cpp e Randomico.cpp, as quais contribuem para o caminhamento:
 
 <storng><h4>Largura.cpp (BFS):</h4></strong>
@@ -72,15 +81,6 @@ Dito esses assuntos, vale ressaltar as funções declaradas nos arquivos Largura
 - ```VerMatriz``` : Função responsável por mostrar o caminho percorrido após o processo de movimentação.
   
 Com a interconexão de todas essas classes e funções, os três tipos de caminhamentos da matriz se tornam possíveis e reais.<br><br>
-  
-<div align=center>
-<img src="https://github.com/Guiliard/Labirinto-Recorrente/assets/127882640/10a4d84a-de7a-4a17-8d69-33b0b15ce691.png" hspace="50px" width="420px"/>
-<img src="https://github.com/Guiliard/Labirinto-Recorrente/assets/127882640/3b326664-be7d-472a-b331-2ce0c809fc0c.png" width="420px"/>
-</div>
-<p  align="center">
-Estruturas auxiliares utilizadas nos processos de caminhamento.
-</p>
-<br>
 <div align=center>
 <img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/834960e6-6e86-4876-8caf-f08a7f6a38cd.png" width="850px">
 </div>
@@ -92,6 +92,14 @@ Ilustração dos três tipos de caminhamento em uma matriz quadra (3x3). Os núm
 <p>Em primeiro lugar, vale ressaltar que os casos especiais foram tratados de acordo com o comportamento do algoritmo. Com excessão do randômico (RAND), tanto o  caminhamento em largura (BFS) quanto o caminhamento em profundidade (DFS) foram tratados de forma a se atingir um performace otimizada, visando encontrar, de maneira rápida, a saída da matriz.</p>
 <p>Em relação ao DFS (profundidade), sempre que o código achasse um "beco sem saída", ele determinaria a posição em que o marcador estivesse como preto e começaria a voltar até que encontrasse uma posição que o programa pudesse continuar sua trajetória. É importante dizer que o "beco sem saída" não precisa ser, necessariamente, um lugar cheio de paredes, tendo em vista que ele pode ser um caminho em que o próprio algoritmo foi fechando e não encontrou o objetivo (saída - ?). A partir disso, o marcador começaria a voltar cada uma das posições, as quais foram armazenadas na Pilha, até que conseguisse chegar em um local que ele tivesse opções de movimento.</p>
 <p>Já o BFS (largura), foi tratado de outra forma, tendo em vista que, nesse caso, não existiriam "becos sem saída", pois a própria naturalidade da exploração do algoritmo elimina essa possibilidade. Seu tipo de tratamento está relacionado à forma que sua procura se dá, já que, ao invés de explorar apenas duas direções, como é o natural desse tipo de código, acrescentou-se mais duas direções, para que seu caminhamento ficasse mais completo e eficiente. Tal fato foi vantajoso porque caso houver, na matriz, uma grande parede e apenas um pequeno espaço possível de se passar, o programa terá um comportamento espelhado, ou seja, ele fará o mesmo processo que ele fez para chegar naquele local só que invertendo uma das direções, isto é, se ele desceu e não encontrou a saída, ele subirá em busca dela.</p>
+
+<div align=center>
+<img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/57ce993c-912d-473a-a4f4-d4595ae622b3.png" hspace="50px" width="420px"/>
+<img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/d21cd510-60d7-4534-99f7-e6b23e7b557c.png" width="420px"/>
+</div>
+<p  align="center">
+Representação dos casos especiais contidos no DFS e no BFS.
+</p>
 
 # Casos Sem Tratamento
 <p>Os casos sem tratamento são os mesmos para todos os algoritmos, todos eles não podem finalizar a busca caso o seu objetivo esteja cercado cor paredes, resultando em um looping eterno, já que ele está procurando a saída por toda a matriz de novo e de novo.</p>
@@ -122,7 +130,6 @@ Ilustração dos três tipos de caminhamento em uma matriz quadra (3x3). Os núm
 # Compilação e Execução
   
 Um arquivo Makefile que realiza todo o procedimento de compilação e execução está disponível no código. Para utilizá-lo, siga as diretrizes de execução no terminal:
-
 
 | Comando                |  Função                                                                                           |                     
 | -----------------------| ------------------------------------------------------------------------------------------------- |
