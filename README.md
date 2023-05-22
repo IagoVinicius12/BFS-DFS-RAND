@@ -11,10 +11,10 @@
 </div>
 
 # Introdução
-<p>Foi proposto um problema de caminhamento de matrizes quadradas (NxN) de três formas distintas: largura (BFS), profundidade (DFS) e randômica (RAND). A primeira forma analisa quais direções são possíveis de ir, explorando, sempre, as posições vizinhas adjacentes das escolhidas. A segunda opta por uma determinada direção e continua o caminhamento até que o limite daquela movimentação seja atingido. Já a terceira caminha de modo alatório, com possibilidade de retorno. Nesse exercício, todas as três formas de movimentação se dão nas quatro direções cardeais (Norte, Sul, Leste, Oeste).</p> 
+<p>Foi proposto um problema de caminhamento de matrizes quadradas (NxN) de três formas distintas: largura (BFS), profundidade (DFS) e randômica (RAND). A primeira forma analisa quais direções são possíveis de ir, sempre explorando as posições vizinhas adjacentes das escolhidas. A segunda opta por uma determinada direção e continua o caminhamento até que o limite daquela movimentação seja atingido. Já a terceira caminha de modo alatório, com possibilidade de retorno. Nesse exercício, todas as três formas de movimentação se dão nas quatro direções cardeais (Norte, Sul, Leste, Oeste).</p> 
 
 # Descrição do Problema
-<p>Em um arquivo do tipo ".data", localiza-se uma matriz quadrada, a qual possui, em suas posições, quatro tipos de elementos: inteiro positivo (1), paredes (#), perigos (*) e saída (?). Os inteiros positivos representados por "1" significam pontos de passagens livres da matriz, as paredes significam as posições que não podem ser acessadas, os asteriscos, os perigos a serem enfrentados, e a saída, a posição que se quer atingir.<br>
+<p>Em um arquivo do tipo ".data", localiza-se uma matriz quadrada, a qual possui, em suas posições, quatro tipos de elementos: inteiro positivo (1), paredes (#), perigos (*) e saída (?). Os inteiros positivos representados por "1" significam pontos de passagens livres da matriz, as paredes significam as posições que não podem ser acessadas, os asteriscos são os perigos a serem enfrentados, e a saída, a posição que se quer atingir.<br>
 Na matriz, os três tipos de caminhamentos realizados devem seguir, além de suas regras principais descritas na "Introdução", as seguintes orientações:
 
 - A posição inicial deve ser a mesma para todos os tipos de caminhamento (linha 0 - coluna 0).
@@ -40,7 +40,7 @@ Todos os elementos da matriz devem ser escaneados e transferidos para o código 
 - ```Pilha.cpp``` : Arquivo que retém a estruturação das funções envolvidas. <br><br>
 - ```Main.cpp``` : Arquivo mais importante, responsável por chamar as funções contidas nas classes e realizar o processo de caminhamento.<br>
   
-Em primeiro lugar, destaca-se a utilização das estruturas "Fila" e "Pilha" para auxílio no processo de movimentação. Para o caminhamento em largura (BFS), a "Fila" foi utilizada, já que, para garantir a correta ordem de chegada dos vértices, as posições visitadas posteriormente deveriam ser armazenadas após as primeiras, tal qual, literalmente, uma fila, onde o primeiro elemento adicionado também é o primeiro elemento eliminado. Já para o caminhamento em profundidade (DFS) e para o caminhamento randômico (RAND), a "Pilha" foi utilizada, tendo em vista que, para ambas as movimentações, a próxima busca sempre começa no próxima posição, assim como, literalmente, uma pilha, onde o primeiro elemento adicionado também é o último elemento eliminado. <br>
+Em primeiro lugar, destaca-se a utilização das estruturas "Fila" e "Pilha" para auxílio no processo de movimentação. Para o caminhamento em largura (BFS), a "Fila" foi utilizada, já que, para garantir a correta ordem de chegada dos vértices, as posições visitadas posteriormente deveriam ser armazenadas após as primeiras, tal qual uma fila, onde o primeiro elemento adicionado também é o primeiro elemento eliminado. Já para o caminhamento em profundidade (DFS) e para o caminhamento randômico (RAND), a "Pilha" foi utilizada, tendo em vista que, para ambas as movimentações, a próxima busca sempre começa na próxima posição, assim como uma pilha, onde o primeiro elemento adicionado também é o último elemento eliminado. <br>
 Outro ponto importante é a forma que o carregamento da matriz foi realizado. Tendo em vista que o processo aconteceria três vezes, carregar três matrizes em memória seria uma alternativa de demandaria um grande custo, ou seja, negativo para o processamento. Para contornar essa situação, utilizou-se programação orientada à objeto, ou seja, a mesma matriz é utilizada três vezes. Com isso, obtém-se um baixo custo de memória e uma otimização do programa.   
 <br>
 <div align=center>
@@ -53,22 +53,22 @@ Estruturas auxiliares utilizadas nos processos de caminhamento.
 <br>
 Dito esses assuntos, vale ressaltar as funções declaradas nos arquivos Largura.cpp, Profundidade.cpp e Randomico.cpp, as quais contribuem para o caminhamento:
 
-<storng><h4>Largura.cpp (BFS):</h4></strong>
+<strong><h4>Largura.cpp (BFS):</h4></strong>
   
 - ```Leitura``` : Função que possui como objetivo ler o arquivo do tipo ".data" e carregá-lo em uma matriz.
-- ```Andando``` :  Função responsável por buscar, nas quatro direções cardeais, a saída (?) da matriz. Essa função também determina se existe algum empecilho na busca (parede - # ou perigo - *). Caso exista, as atitudes em acordo com as regras do programa serão tomadas, tais como não fazer nada ou reiniciar o caminhamento. Vale Tal processo se perpetua até que a saída (?) da matriz seja encontrada.
+- ```Andando``` :  Função responsável por buscar, nas quatro direções cardeais, a saída (?) da matriz. Essa função também determina se existe algum empecilho na busca (parede - # ou perigo - *). Caso exista, as atitudes em acordo com as regras do programa serão tomadas, tais como não fazer nada ou reiniciar o caminhamento. Esse processo se perpetua até que a saída (?) da matriz seja encontrada.
 - ```Movimento``` : Função usada no final do processo de busca, ou seja, quando a saída for encontrada, o caminhamento será iniciado, seguindo as coorrdenadas analizadas e armazenadas na "Fila".
-- ```CriaTrajetoria``` : Função utilizada no final do processo, a qual cria o caminho percorrido, que se origina através do uso de um marcador (x), sendo que, todas as posições nas quais o marcador está presente são as posições acessadas no processo.
+- ```CriaTrajetoria``` : Função utilizada no final do processo, a qual cria o caminho percorrido que se origina através do uso de um marcador (x), sendo que, todas as posições nas quais o marcador está presente são as posições acessadas no processo.
 - ```VerMatriz``` : Função responsável por mostrar o caminho percorrido após o processo de movimentação.
   
-<storng><h4>Profundidade.cpp (DFS):</h4></strong>
+<strong><h4>Profundidade.cpp (DFS):</h4></strong>
   
 - ```LendoMatriz``` : Função que possui como objetivo ler o arquivo do tipo ".data" e carregá-lo em uma matriz.
-- ```Andando``` :  Função responsável por escolher uma determinada direção e continuar o caminhamento naquela direção até que o limite seja atingido. Essa função também determina se existe algum empecilho no caminho escolhido (parede - # ou perigo - *). Caso exista, as atitudes em acordo com as regras do programa serão tomadas, tais como não fazer nada ou reiniciar o caminhamento. Vale salientar que as possições possíveis são armazenadas na "Pilha". Tal processo se perpetua até que a saída (?) da matriz seja encontrada.
-- ```CriaTrajetoria``` : Função utilizada no final do processo, a qual cria o caminho percorrido, que se origina através do uso de um marcador (x), sendo que, todas as posições nas quais o marcador está presente são as posições acessadas no processo.
+- ```Andando``` :  Função responsável por escolher uma determinada direção e continuar o caminhamento naquele sentido até que o limite seja atingido. Essa função também determina se existe algum empecilho no caminho escolhido (parede - # ou perigo - *). Caso exista, as atitudes em acordo com as regras do programa serão tomadas, tais como não fazer nada ou reiniciar o caminhamento. Vale salientar que as possições possíveis são armazenadas na "Pilha". Tal processo se perpetua até que a saída (?) da matriz seja encontrada.
+- ```CriaTrajetoria``` : Função utilizada no final do processo, a qual cria o caminho percorrido que se origina através do uso de um marcador (x), sendo que, todas as posições nas quais o marcador está presente são as posições acessadas no processo.
 - ```VerMatriz``` : Função responsável por mostrar o caminho percorrido após o processo de movimentação.
   
-<storng><h4>Randômico.cpp (RAND):</h4></strong>
+<strong><h4>Randômico.cpp (RAND):</h4></strong>
   
 - ```Leitura``` : Função que possui como objetivo ler o arquivo do tipo ".data" e carregá-lo em uma matriz.
 - ```Movimento``` :  Função responsável por escolher, aleatoriamente, uma determinada direção para o caminhamento, sendo que tal processo se perpetua até que a saída (?) da matriz seja encontrada. Por fim, vale exibir a relação entre o sorteio randômico e as 4 direções cardeais:
@@ -77,7 +77,7 @@ Dito esses assuntos, vale ressaltar as funções declaradas nos arquivos Largura
   * 2 - Oeste
   * 3 - Norte
 - ```AndarMatriz``` : Função responsável por realizar o caminhamento, analisando se a posição da matriz é acessável ou não. Caso exista algum empecilho no caminho escolhido (parede - # ou perigo - *), as atitudes em acordo com as regras do programa serão tomadas, tais como não fazer nada ou reiniciar o caminhamento. Vale ressaltar que as posições possíveis são armazenadas na "Pilha".
-- ```CriaTrajetoria``` : Função utilizada no final do processo, a qual cria o caminho percorrido, que se origina através do uso de um marcador (x), sendo que, todas as posições nas quais o marcador está presente são as posições acessadas no processo.
+- ```CriaTrajetoria``` : Função utilizada no final do processo, a qual cria o caminho percorrido que se origina através do uso de um marcador (x), sendo que, todas as posições nas quais o marcador está presente são as posições acessadas no processo.
 - ```VerMatriz``` : Função responsável por mostrar o caminho percorrido após o processo de movimentação.
   
 Com a interconexão de todas essas classes e funções, os três tipos de caminhamentos da matriz se tornam possíveis e reais.<br><br>
@@ -85,12 +85,12 @@ Com a interconexão de todas essas classes e funções, os três tipos de caminh
 <img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/834960e6-6e86-4876-8caf-f08a7f6a38cd.png" width="850px">
 </div>
 <p  align="center">
-Ilustração dos três tipos de caminhamento em uma matriz quadra (3x3). Os números representam os movimentos ordenados a serem seguidos em cada um dos casos. É importante salientar que, no caminhamento aleatório (RAND), qualquer número poderia assumir a identidade de qualquer número, tendo em vista que a aleatoriedade não possui um padrão de deslocamento.
+Ilustração dos três tipos de caminhamento em uma matriz quadrada (3x3). Os números representam os movimentos ordenados a serem seguidos em cada um dos casos. É importante salientar que, no caminhamento aleatório (RAND), qualquer número poderia assumir a identidade de qualquer número, tendo em vista que a aleatoriedade não possui um padrão de deslocamento.
 </p>
 
 # Casos Especiais
 <p>Em primeiro lugar, vale ressaltar que os casos especiais foram tratados de acordo com o comportamento do algoritmo. Com excessão do randômico (RAND), tanto o  caminhamento em largura (BFS) quanto o caminhamento em profundidade (DFS) foram tratados de forma a se atingir um performace otimizada, visando encontrar, de maneira rápida, a saída da matriz.</p>
-<p>Em relação ao DFS (profundidade), sempre que o código achasse um "beco sem saída", ele determinaria a posição em que o marcador estivesse como preto e começaria a voltar até que encontrasse uma posição que o programa pudesse continuar sua trajetória. É importante dizer que o "beco sem saída" não precisa ser, necessariamente, um lugar cheio de paredes, tendo em vista que ele pode ser um caminho em que o próprio algoritmo foi fechando e não encontrou o objetivo (saída - ?). A partir disso, o marcador começaria a voltar cada uma das posições, as quais foram armazenadas na Pilha, até que conseguisse chegar em um local que ele tivesse opções de movimento.</p>
+<p>Em relação ao DFS (profundidade), sempre que o código achasse um "beco sem saída", ele determinaria a posição em que o marcador estivesse como preto e começaria a voltar até que encontrasse uma posição que o programa pudesse continuar sua trajetória. É importante dizer que o "beco sem saída" não precisa ser, necessariamente, um lugar cheio de paredes, tendo em vista que ele pode ser um caminho em que o próprio algoritmo foi se fechando e não encontrou o objetivo (saída - ?). A partir disso, o marcador começaria a voltar cada uma das posições, as quais foram armazenadas na Pilha, até que conseguisse chegar em um local que ele tivesse opções de movimento.</p>
 <p>Já o BFS (largura), foi tratado de outra forma, tendo em vista que, nesse caso, não existiriam "becos sem saída", pois a própria naturalidade da exploração do algoritmo elimina essa possibilidade. Seu tipo de tratamento está relacionado à forma que sua procura se dá, já que, ao invés de explorar apenas duas direções, como é o natural desse tipo de código, acrescentou-se mais duas direções, para que seu caminhamento ficasse mais completo e eficiente. Tal fato foi vantajoso porque caso houver, na matriz, uma grande parede e apenas um pequeno espaço possível de se passar, o programa terá um comportamento espelhado, ou seja, ele fará o mesmo processo que ele fez para chegar naquele local só que invertendo uma das direções, isto é, se ele desceu e não encontrou a saída, ele subirá em busca dela.</p>
 
 <div align=center>
@@ -102,8 +102,15 @@ Representação dos casos especiais contidos no DFS e no BFS.
 </p>
 
 # Casos Sem Tratamento
-<p>Os casos sem tratamento são os mesmos para todos os algoritmos, todos eles não podem finalizar a busca caso o seu objetivo esteja cercado cor paredes, resultando em um looping eterno, já que ele está procurando a saída por toda a matriz de novo e de novo.</p>
-<p>Uma forma de consertar o código seria adicionar algumas condicionais antes mesmo de iniciar a busca, verificar por pelo menos se há uma passagem para a saída, porém para o nosso objetivo não foi necessário essa implementação,outra forma de talvez consertar estes possíveis erros seria adicionar as diagonais ao movimento de todos os algoritmos, já que existem alguns casos que talvez seja possível somente andando na diagonal.</p>
+<p>Existem três casos sem tratamento que se destacam no algoritmo em questão, tendo em vista que, se eles ocorrerem, a busca não é finalizada, e um looping eterno é inicializado. O primeiro deles é se toda a matriz é constituída de paredes (#). O segundo caso advém do cercamento do objetivo (saída) por passagens inacessecíveis (#). Já a terceira situação é caso apenas a posição de início (linha 0 - coluna 0) for possível de ser acessada, o que deixa o marcador "preso".</p>
+<p>Uma forma de consertar o código seria adicionar algumas condicionais antes mesmo de iniciar a busca, verificando se, pelo menos, há uma passagem para a saída. Outra forma de prevenir esses possíveis erros seria adicionar as diagonais ao movimento do marcador, uma vez que existem alguns casos que se resolvem com a utilização de novas coordenadas (Nordeste, Sudoeste, Sudeste, Noroeste).</p>
+
+<div align=center>
+<img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/158a7698-dcea-471b-937e-902225ea1a7b.png" width="850px">
+</div>
+<p  align="center">
+Ilustração dos três casos sem tratamento em uma matriz quadrada (3x3). Ambos os casos representam caminhamentos impossíveis.
+</p>
 
 # Implementação
 
