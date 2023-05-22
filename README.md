@@ -94,7 +94,7 @@ Ilustração dos três tipos de caminhamento em uma matriz quadrada (3x3). Os n�
 <p>Já o BFS (largura), foi tratado de outra forma, tendo em vista que, nesse caso, não existiriam "becos sem saída", pois a própria naturalidade da exploração do algoritmo elimina essa possibilidade. Seu tipo de tratamento está relacionado à forma que sua procura se dá, já que, ao invés de explorar apenas duas direções, como é o natural desse tipo de código, acrescentou-se mais duas direções, para que seu caminhamento ficasse mais completo e eficiente. Tal fato foi vantajoso porque caso houver, na matriz, uma grande parede e apenas um pequeno espaço possível de se passar, o programa terá um comportamento espelhado, ou seja, ele fará o mesmo processo que ele fez para chegar naquele local só que invertendo uma das direções, isto é, se ele desceu e não encontrou a saída, ele subirá em busca dela.</p>
 
 <div align=center>
-<img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/57ce993c-912d-473a-a4f4-d4595ae622b3.png" hspace="50px" width="420px"/>
+<img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/bc45bb83-f0a1-4350-b9af-c74d0b3f8c32.png" hspace="50px" width="420px"/>
 <img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/d21cd510-60d7-4534-99f7-e6b23e7b557c.png" width="420px"/>
 </div>
 <p  align="center">
