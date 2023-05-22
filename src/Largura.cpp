@@ -124,6 +124,8 @@ void Largura :: Movimento(short int *linha, short int * coluna, Regiao **mat)
         }
         mat[0][0].cor = "Cinza";
         DesenfileiraAll(&trajetoria,&coordenada);
+        coordenada.linha = 0;
+        coordenada.coluna = 0;
         Enfileira(&trajetoria,coordenada);
         posicao=trajetoria.first->prox;
     }
