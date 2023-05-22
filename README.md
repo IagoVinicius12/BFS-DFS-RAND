@@ -99,13 +99,19 @@ Ilustração dos três tipos de caminhamento em uma matriz quadra (3x3). Os núm
 # Implementação
 
 # Conclusão
-
+<p>Por fim, neste trabalho foi observado as diferentes formas de exploração de matriz, cada um possui uma particularidade, casos bons e ruins, mas são importantes para o entendimento de algoritmos e suas funções. O BFS e o DFS possuem uma mesma função que é explorar a matriz até achar seu objetivo ou até passar por todas as posições da matriz, tendo dois algoritmos de mesmo objetivo é possível compara-los para observar quais são seus melhores e piores casos, de acordo com as mudanças na matriz</p>
 # Especificações do Dispositivo Utilizado
 
 | Componentes            | Detalhes                                                                                         |
 | -----------------------| -----------------------------------------------------------------------------------------------  |
 |  `Processador`         | Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz   1.50 GHz                                             |
 |  `RAM Instalada`       | 8.0 GB (Utilizável: 7.8 GB)                                                                      |
+|  `Tipo de Sistema`     | Sistema Operacional de 64 bits, processador baseado em x64                                       |
+|  `Sistema Operacional` | Edição Windows 11 Home Single Language, versão 22H2                                              |
+| Componentes 2          | Detalhes                                                                                         |
+| -----------------------| -----------------------------------------------------------------------------------------------  |
+|  `Processador`         | Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz   1.50 GHz                                             |
+|  `RAM Instalada`       | 16.0 GB (Utilizável: 15.4 GB)                                                                    |
 |  `Tipo de Sistema`     | Sistema Operacional de 64 bits, processador baseado em x64                                       |
 |  `Sistema Operacional` | Edição Windows 11 Home Single Language, versão 22H2                                              |
 
