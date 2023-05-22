@@ -87,6 +87,7 @@ Com a interconexão de todas essas classes e funções, os três tipos de caminh
 <p  align="center">
 Ilustração dos três tipos de caminhamento em uma matriz quadrada (3x3). Os números representam os movimentos ordenados a serem seguidos em cada um dos casos. É importante salientar que, no caminhamento aleatório (RAND), qualquer número poderia assumir a identidade de qualquer número, tendo em vista que a aleatoriedade não possui um padrão de deslocamento.
 </p>
+<br>
 
 # Casos Especiais
 <p>Em primeiro lugar, vale ressaltar que os casos especiais foram tratados de acordo com o comportamento do algoritmo. Com excessão do randômico (RAND), tanto o  caminhamento em largura (BFS) quanto o caminhamento em profundidade (DFS) foram tratados de forma a se atingir um performace otimizada, visando encontrar, de maneira rápida, a saída da matriz.</p>
@@ -100,6 +101,7 @@ Ilustração dos três tipos de caminhamento em uma matriz quadrada (3x3). Os n�
 <p  align="center">
 Representação dos casos especiais contidos no DFS e no BFS.
 </p>
+<br>
 
 # Casos Sem Tratamento
 <p>Existem três casos sem tratamento que se destacam no algoritmo em questão, tendo em vista que, se eles ocorrerem, a busca não é finalizada, e um looping eterno é inicializado. O primeiro deles é se toda a matriz é constituída de paredes (#). O segundo caso advém do cercamento do objetivo (saída) por passagens inacessecíveis (#). Já a terceira situação é caso apenas a posição de início (linha 0 - coluna 0) for possível de ser acessada, o que deixa o marcador "preso".</p>
@@ -111,13 +113,15 @@ Representação dos casos especiais contidos no DFS e no BFS.
 <p  align="center">
 Ilustração dos três casos sem tratamento em uma matriz quadrada (3x3). Ambos os casos representam caminhamentos impossíveis.
 </p>
+<br>
 
 # Implementação
 
 # Conclusão
-<p>Por fim, neste trabalho foi observado as diferentes formas de exploração de matriz, cada um possui uma particularidade, casos bons e ruins, mas são importantes para o entendimento de algoritmos e suas funções. O BFS e o DFS possuem uma mesma função que é explorar a matriz até achar seu objetivo ou até passar por todas as posições da matriz, tendo dois algoritmos de mesmo objetivo é possível compara-los para observar quais são seus melhores e piores casos, de acordo com as mudanças na matriz. A média do tempo de execução do código inteiro foi de 18,88 milisegundos.</p>
+<p>Por fim, neste trabalho foi observado as diferentes formas de exploração de matriz, cada uma possuindo uma determinada particularidade. Diferentemente do RAND, o BFS e o DFS possuem uma mesma função, a qual é a de explorar a matriz até achar seu objetivo ou até passar por todas as posições da matriz. Tendo dois algoritmos de mesmo objetivo, é possível compará-los para observar quais são seus melhores e piores casos, de acordo com as mudanças na matriz. A média do tempo de execução do código inteiro foi de 18,88 milisegundos.</p>
+<p>De forma geral, o programa, orientado à objeto, se mostra eficiente para resolver o caminhamento de matrizes. Seu custo computacional é diretamente proporcional ao tamanho da entrada, visto que um grande número de matrizes maiores demandará mais iterações e operações do que um pequeno número de matrizes menores. Além disso, afirma-se que o objetivo do trabalho foi cumprido com exelência, porém, o código é passivo de melhorias e otimizações, tais como aquelas discutidas na seção "Casos Sem Tratamento".
 
-# Especificações do Dispositivo Utilizado
+# Especificações dos Dispositivos Utilizados
 
 | Componentes            | Detalhes                                                                                         |
 | -----------------------| -----------------------------------------------------------------------------------------------  |
@@ -126,8 +130,9 @@ Ilustração dos três casos sem tratamento em uma matriz quadrada (3x3). Ambos 
 |  `Tipo de Sistema`     | Sistema Operacional de 64 bits, processador baseado em x64                                       |
 |  `Sistema Operacional` | Edição Windows 11 Home Single Language, versão 22H2                                              |
 
+<br>
 
-| Componentes 2          | Detalhes                                                                                         |
+| Componentes            | Detalhes                                                                                         |
 | -----------------------| -----------------------------------------------------------------------------------------------  |
 |  `Processador`         | AMD Ryzen 5 4600H with Radeon Graphics            3.00 GHz                                       |
 |  `RAM Instalada`       | 16.0 GB (Utilizável: 15.4 GB)                                                                    |
