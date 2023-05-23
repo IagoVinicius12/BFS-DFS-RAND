@@ -9,13 +9,14 @@ int main()
     Randomico *randomico = new Randomico();
     Profundidade *profundo = new Profundidade();
     Largura *largura = new Largura();
-    short int tamanho;
+    short int tamanho,nada;
     string nomearq = "dataset/input.data";
     fstream arq;
 
     arq.open(nomearq);
     arq >> tamanho;
     arq >> tamanho;
+    arq>>nada;
 
     largura->settamanho(tamanho);
 
@@ -35,6 +36,7 @@ int main()
     arq.open(nomearq);
     arq >> tamanho;
     arq >> tamanho;
+    arq>>nada;
 
     profundo->settamanho(tamanho);
 
@@ -50,6 +52,7 @@ int main()
     arq.open(nomearq);
     arq >> tamanho;
     arq >> tamanho;
+    arq>>nada;
 
     randomico->setTamanho(tamanho);
 
