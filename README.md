@@ -144,11 +144,11 @@ Tempo de execução de cada caminhamento e total. <br> <br>
 
 # Conclusão
 <p>De forma geral, o programa, orientado à objeto, se mostra eficiente para resolver o caminhamento de matrizes. Seu custo computacional é diretamente proporcional ao tamanho da entrada, visto que um grande número de matrizes maiores demandará mais iterações e operações do que um pequeno número de matrizes menores. Além disso, afirma-se que o objetivo do trabalho foi cumprido com exelência, porém, o código é passivo de melhorias e otimizações, tais como aquelas discutidas na seção "Casos Sem Tratamento".<p>
-<p>Por fim, neste trabalho foi observado as diferentes formas de exploração de matriz, cada uma possuindo sua determinada particularidade. Com mudanças na matriz, é possível comparar os algoritmos para observar quais são seus melhores e piores casos. Em se tratando sobre o BFS e RAND, ambos "melhoram" o seu desempenho quanto mais próximo a saída (?) estiver da posição de início (linha 0 - coluna 0). Já o DFS apresenta um melhor desempenho quanto mais afastado a saída estiver da posição inicial. Vale ressaltar que a média do tempo de execução do código inteiro também depende do tamanho da matriz e da localização da saída. No exemplo apresentado, a média do tempo total foi de 500 milissegundos.</p>
+<p>Por fim, neste trabalho foi observado as diferentes formas de exploração de matriz, cada uma possuindo sua determinada particularidade. Com mudanças na matriz, é possível comparar os algoritmos para observar quais são seus melhores e piores casos. Em se tratando sobre o BFS e RAND, ambos "melhoram" o seu desempenho quanto mais próximo a saída (?) estiver da posição de início (linha 0 - coluna 0). Já o DFS apresenta um melhor desempenho quanto mais afastado a saída estiver da posição inicial. Vale ressaltar que a média do tempo de execução do código inteiro também depende do tamanho da matriz e da localização da saída. No exemplo apresentado, a média do tempo do BFS foi de 70,95ms, a do DFS foi de 57,19ms, a do RAND foi de 49,95ms e a média do tempo total foi de 193,40ms. Com esses dados, é possivel ver que em um ponto médio na matriz o BFS não possui tanta vantagem como o DFS para encontrar rapidamente, o randômico apesar de tudo se demonstrou como o mais rápido na maior parte dos casos, o que é bem aleatório já que não há como controla-lo, além das prioridades claro, Mas o que é mais impactante no randômico é que mesmo que hajam muitas paredes ou perigos o que mais o afeta é a distância, pois quando está há uma distância média do ponto de inicio ele consegue se comparar muito bem ao BFS. .</p>
 
 # Especificações dos Dispositivos Utilizados
 
-| Componentes            | Detalhes                                                                                         |
+| Componentes            | Detalhes Máquina 1                                                                               |
 | -----------------------| -----------------------------------------------------------------------------------------------  |
 |  `Processador`         | Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz   1.50 GHz                                             |
 |  `RAM Instalada`       | 8.0 GB (Utilizável: 7.8 GB)                                                                      |
@@ -157,7 +157,7 @@ Tempo de execução de cada caminhamento e total. <br> <br>
 
 <br>
 
-| Componentes            | Detalhes                                                                                         |
+| Componentes            | Detalhes Máquina 2                                                                               |
 | -----------------------| -----------------------------------------------------------------------------------------------  |
 |  `Processador`         | AMD Ryzen 5 4600H with Radeon Graphics            3.00 GHz                                       |
 |  `RAM Instalada`       | 16.0 GB (Utilizável: 15.4 GB)                                                                    |
