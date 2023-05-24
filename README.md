@@ -120,7 +120,7 @@ Ilustração dos três casos sem tratamento em uma matriz quadrada (3x3). Ambos 
 
 Considere a matriz (50x50) como teste do problema proposto:
 <div align=center>
-<img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/1183b3da-b386-4053-86ae-2f0ce07646a8.png" width="800px">
+<img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/94497a05-d54b-47d4-aee8-521dc06f1d5e.png" width="800px">
 </div>
 O resultado esperado é:<br>
 <br><div align=center>
