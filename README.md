@@ -136,7 +136,7 @@ Profundidade e trajetória correspondente. <br> <br>
 <p  align="center">
 Randômico e trajetória correspondente. <br> <br>
 </p>
-<img src="https://github.com/Guiliard/BFS-DFS-RAND/assets/127882640/a7a7a4d1-96fb-438a-aeed-5e4ac7c6a16b.png" width="250px"> <br>
+<img src="https://github.com/IagoVinicius12/BFS-DFS-RAND/assets/115949326/8d25d5f4-eb97-4213-858f-b4d551a7c61c" width="250px"> <br>
 <p  align="center">
 Tempo de execução de cada caminhamento e total. <br> <br>
 </p>
