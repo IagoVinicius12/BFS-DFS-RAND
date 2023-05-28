@@ -136,7 +136,7 @@ Profundidade e trajetória correspondente. <br> <br>
 <p  align="center">
 Randômico e trajetória correspondente. <br> <br>
 </p>
-<img src="https://github.com/IagoVinicius12/BFS-DFS-RAND/assets/115949326/8d25d5f4-eb97-4213-858f-b4d551a7c61c" width="250px"> <br>
+<img src="https://github.com/IagoVinicius12/BFS-DFS-RAND/assets/115949326/8d25d5f4-eb97-4213-858f-b4d551a7c61c.png" width="250px"> <br>
 <p  align="center">
 Tempo de execução de cada caminhamento e total. <br> <br>
 </p>
@@ -144,22 +144,25 @@ Tempo de execução de cada caminhamento e total. <br> <br>
 
 # Conclusão
 <p>De forma geral, o programa, orientado à objeto, se mostra eficiente para resolver o caminhamento de matrizes. Seu custo computacional é diretamente proporcional ao tamanho da entrada, visto que um grande número de matrizes maiores demandará mais iterações e operações do que um pequeno número de matrizes menores. Além disso, afirma-se que o objetivo do trabalho foi cumprido com exelência, porém, o código é passivo de melhorias e otimizações, tais como aquelas discutidas na seção "Casos Sem Tratamento".<p>
-<p>Por fim, neste trabalho foi observado as diferentes formas de exploração de matriz, cada uma possuindo sua determinada particularidade. Com mudanças na matriz, é possível comparar os algoritmos para observar quais são seus melhores e piores casos. Em se tratando sobre o BFS e RAND, ambos "melhoram" o seu desempenho quanto mais próximo a saída (?) estiver da posição de início (linha 0 - coluna 0). Já o DFS apresenta um melhor desempenho quanto mais afastado a saída estiver da posição inicial. Vale ressaltar que a média do tempo de execução do código inteiro também depende do tamanho da matriz e da localização da saída. No exemplo apresentado, a média do tempo do BFS foi de 70,95ms, a do DFS foi de 57,19ms, a do RAND foi de 49,95ms e a média do tempo total foi de 193,40ms. Com esses dados, é possivel ver que em um ponto médio na matriz o BFS não possui tanta vantagem como o DFS para encontrar rapidamente, o randômico apesar de tudo se demonstrou como o mais rápido na maior parte dos casos, o que é bem aleatório já que não há como controla-lo, além das prioridades claro, Mas o que é mais impactante no randômico é que mesmo que hajam muitas paredes ou perigos o que mais o afeta é a distância, pois quando está há uma distância média do ponto de inicio ele consegue se comparar muito bem ao BFS. .</p>
+<p>Por fim, neste trabalho foi observado as diferentes formas de exploração de matriz, cada uma possuindo sua determinada particularidade. Com mudanças na matriz, é possível comparar os algoritmos para observar quais são seus melhores e piores casos. Em se tratando sobre o BFS e RAND, ambos "melhoram" o seu desempenho quanto mais próximo a saída (?) estiver da posição de início (linha 0 - coluna 0). Já o DFS apresenta um melhor desempenho quanto mais afastado a saída estiver da posição inicial. Vale ressaltar que a média do tempo de execução do código inteiro também depende do tamanho da matriz e da localização da saída.<p>
+<p>No exemplo apresentado, a média do tempo do BFS foi de 70,95ms, a do DFS foi de 57,19ms, a do RAND foi de 49,95ms e a média do tempo total foi de 193,40ms. Com esses dados, é possivel ver que, em um ponto médio da matriz, o BFS não possui tanta vantagem como o DFS para encontrar a saída (?) rapidamente. Em se tratando do randômico, mesmo que hajam muitas paredes ou perigos, ele se monstrou como o mais rápido na maior parte dos casos.</p>
 
 # Especificações dos Dispositivos Utilizados
 
-| Componentes            | Detalhes Máquina 1                                                                               |
+<strong><h4>Escrita e Produção do código:</h4></strong>
+
+| Componentes            | Detalhes                                                                                         |
 | -----------------------| -----------------------------------------------------------------------------------------------  |
 |  `Processador`         | Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz   1.50 GHz                                             |
 |  `RAM Instalada`       | 8.0 GB (Utilizável: 7.8 GB)                                                                      |
 |  `Tipo de Sistema`     | Sistema Operacional de 64 bits, processador baseado em x64                                       |
 |  `Sistema Operacional` | Edição Windows 11 Home Single Language, versão 22H2                                              |
 
-<br>
+<strong><h4>Compilação e Execução do código:</h4></strong>
 
-| Componentes            | Detalhes Máquina 2                                                                               |
+| Componentes            | Detalhes                                                                                         |
 | -----------------------| -----------------------------------------------------------------------------------------------  |
-|  `Processador`         | AMD Ryzen 5 4600H with Radeon Graphics            3.00 GHz                                       |
+|  `Processador`         | AMD Ryzen 5 4600H with Radeon Graphics @ 3.00 GHz                                                  |
 |  `RAM Instalada`       | 16.0 GB (Utilizável: 15.4 GB)                                                                    |
 |  `Tipo de Sistema`     | Sistema Operacional de 64 bits, processador baseado em x64                                       |
 |  `Sistema Operacional` | Edição Windows 11 Home Single Language, versão 22H2                                              |
@@ -172,4 +175,4 @@ Um arquivo Makefile que realiza todo o procedimento de compilação e execução
 | -----------------------| ------------------------------------------------------------------------------------------------- |
 |  `make clean`          | Apaga a última compilação realizada contida na pasta build                                        |
 |  `make`                | Executa a compilação do programa utilizando o g++, e o resultado vai para a pasta build           |
-|  `make run`            | Executa o programa da pasta build após a realização da compilação                                 |
+|  `make run`            | Executa o programa da pasta build após a realização da compilação                             
